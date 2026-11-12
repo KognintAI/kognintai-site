@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SquadChart™ | Your bot team at a glance</title>
   <meta name="description" content="SquadChart™: your Grok Bot team at a glance. Share your team file, review and edit the charts in plain words, and type Finish to get your files. Up to 10 bots.">
-  <link rel="preload" as="image" type="image/webp" imagesrcset="assets/wiki-web-r6-640.webp 640w, assets/wiki-web-r6-1275.webp 1275w, assets/wiki-web-r6-2550.webp 2550w" imagesizes="(max-width:1180px) calc(100vw - 48px), 640px" fetchpriority="high">
+  <link rel="preload" as="image" type="image/webp" imagesrcset="assets/wiki-web-r6c-640.webp 640w, assets/wiki-web-r6c-1131.webp 1131w, assets/wiki-web-r6c-2262.webp 2262w" imagesizes="(max-width:1180px) calc(100vw - 48px), 640px" fetchpriority="high">
 <link rel="canonical" href="https://kognintai.com/squadchart/">
   <meta property="og:title" content="SquadChart™ | Your bot team at a glance">
   <meta property="og:description" content="Your Grok Bot team at a glance. Up to 10 bots.">
@@ -22,7 +22,7 @@
     body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#fff;color:var(--ink);line-height:1.6;text-align:center}
     .wrap{max-width:1200px;margin:0 auto;padding:32px 24px 48px}
     .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-    picture{display:block}.wiki{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;display:block}
+    picture{display:block}.wiki{width:100%;height:auto;display:block}
     .more{margin:12px 0 32px;font-size:.95rem}
     .layout{display:grid;grid-template-columns:640px minmax(300px,1fr);gap:48px;align-items:stretch}
     .right{display:flex;flex-direction:column}
@@ -53,7 +53,7 @@
       .wrap>.caveat{margin:32px 0 0;font-size:.85rem;color:var(--muted);font-style:italic}
     .use{line-height:1.7}
       .get label{font-size:1.02rem;margin-bottom:24px}
-    @media (min-width:1181px){.left{display:flex;flex-direction:column}.left picture{flex:1 1 auto;min-height:0;display:flex}.left .wiki{height:100%;object-fit:cover;object-position:center top}}
+    @media (min-width:1181px){.left{display:flex;flex-direction:column}.left picture{flex:1 1 auto;min-height:0;display:flex}.left .wiki{height:100%;object-fit:contain;object-position:center}.right .get{flex:0 0 auto;margin-top:auto;margin-bottom:17.4px;padding:24px 28px}}
   </style>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="66add34a-217b-442e-922a-92049e173783"></script>
 </head>
@@ -63,7 +63,7 @@
 
     <div class="layout">
       <div class="left">
-        <picture><source type="image/webp" srcset="assets/wiki-web-r6-640.webp 640w, assets/wiki-web-r6-1275.webp 1275w, assets/wiki-web-r6-2550.webp 2550w" sizes="(max-width:1180px) calc(100vw - 48px), 640px"><img class="wiki" src="assets/wiki-web-r6-1275x1650.png" srcset="assets/wiki-web-r6-1275x1650.png 1x, assets/wiki-web-r6-letter.png 2x" width="1275" height="1650" fetchpriority="high" alt="SquadChart graphic, your bot team at a glance. Four steps: share your team by dropping your team file in the chat; review the charts to see who does what and how work moves; edit in plain words, for example 'Put Sam in Sales' or 'Rename Sam to Alex'; and type Finish to get your charts and files, then edit and run again anytime. Highlights: free to use within your Grok Bot plan limit; built for small teams, up to 10 bots; no outside chart services, by SquadChart only; no passwords, doesn't ask for keys or tokens. Note: runs count toward your Grok Bot plan usage."></picture>
+        <picture><source type="image/webp" srcset="assets/wiki-web-r6c-640.webp 640w, assets/wiki-web-r6c-1131.webp 1131w, assets/wiki-web-r6c-2262.webp 2262w" sizes="(max-width:1180px) calc(100vw - 48px), 640px"><img class="wiki" src="assets/wiki-web-r6c-1131x1506.png" srcset="assets/wiki-web-r6c-1131x1506.png 1x, assets/wiki-web-r6c-2x.png 2x" width="1131" height="1506" fetchpriority="high" alt="SquadChart graphic, your bot team at a glance. Four steps: share your team by dropping your team file in the chat; review the charts to see who does what and how work moves; edit in plain words, for example 'Put Sam in Sales' or 'Rename Sam to Alex'; and type Finish to get your charts and files, then edit and run again anytime. Highlights: free to use within your Grok Bot plan limit; built for small teams, up to 10 bots; no outside chart services, by SquadChart only; no passwords, doesn't ask for keys or tokens. Note: runs count toward your Grok Bot plan usage."></picture>
       </div>
       <div class="right">
         <div class="intro">

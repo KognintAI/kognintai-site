@@ -23,7 +23,7 @@
     h3{font-size:1.05rem;margin:24px 0 6px}
     ul{margin:0;padding-left:1.2em}li{margin:4px 0}
     .ex{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9rem;background:#F3F4F6;border-left:3px solid #B45309;border-radius:4px;padding:10px 14px;margin:8px 0 16px;overflow-wrap:anywhere}
-    figure{margin:16px 0 24px}figure img{display:block;max-width:100%;height:auto;border:1px solid #E5E7EB;border-radius:6px}
+    figure{margin:16px 0 24px}figure.wide{width:min(960px,calc(100vw - 48px));margin-left:calc(50% - min(480px,calc(50vw - 24px)))}figure.wide img{width:100%}figure img{display:block;max-width:100%;height:auto;border:1px solid #E5E7EB;border-radius:6px}
     figcaption{font-size:.875rem;color:#4B5563;margin-top:6px}
     html{scroll-behavior:smooth}h2{scroll-margin-top:16px}
     .toc{margin:24px 0 8px;padding:14px 18px;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:8px;font-size:.95rem}
@@ -69,7 +69,7 @@
     <li>Bot Smith: no group; reports to Daniel, but Ungrouped reports to Atlas</li>
     <li>Wrench: no group; reports to Daniel, but Ungrouped reports to Atlas</li>
     </ul>
-    <figure><a href="../assets/tutorial/first-render.png"><img src="../assets/tutorial/first-render.png" width="712" height="722" loading="lazy" alt="The first Org Chart and Directory, with the summary line, Title (Not set): Bot Smith, and the items flagged for a look."></a><figcaption>The first Org Chart and Directory, with the summary line, Title (Not set): Bot Smith, and the items flagged for a look.</figcaption></figure>
+    <figure class="wide"><a href="../assets/tutorial/first-render.png"><img src="../assets/tutorial/first-render.png" width="712" height="722" loading="lazy" alt="The first Org Chart and Directory, with the summary line, Title (Not set): Bot Smith, and the items flagged for a look."></a><figcaption>The first Org Chart and Directory, with the summary line, Title (Not set): Bot Smith, and the items flagged for a look.</figcaption></figure>
     <h2 id="change-things">Change things anytime</h2>
     <p>After those first charts, you can type a change whenever you like — one change, or several in the same message.</p>
     <p>You might type:</p>
@@ -136,7 +136,7 @@
     <p>When you’re ready, type <strong>Finish</strong> by itself.</p>
     <p>You get your Org Chart, the Directory (the image and <strong>team-directory.md</strong>), and <strong>team-changes.md</strong>. The summary in this Finish shot is <strong>10 bots · 37 handoff rows · 0 outside notes</strong>. The org chart shows the updates from the change above: Quill now sits in the admin row with Atlas.</p>
     <p>It also says: <strong>Saved until you type Start over. To change more, type an entry as before, like Put bot in group, then Finish to re-render.</strong></p>
-    <figure><a href="../assets/tutorial/finish.png"><img src="../assets/tutorial/finish.png" width="712" height="585" loading="lazy" alt="What Finish delivers: the updated Org Chart and Directory, team-directory.md, team-changes.md, the summary line, and the Saved until Start over note."></a><figcaption>What Finish delivers: the updated Org Chart and Directory, team-directory.md, team-changes.md, the summary line, and the Saved until Start over note.</figcaption></figure>
+    <figure class="wide"><a href="../assets/tutorial/finish.png"><img src="../assets/tutorial/finish.png" width="712" height="585" loading="lazy" alt="What Finish delivers: the updated Org Chart and Directory, team-directory.md, team-changes.md, the summary line, and the Saved until Start over note."></a><figcaption>What Finish delivers: the updated Org Chart and Directory, team-directory.md, team-changes.md, the summary line, and the Saved until Start over note.</figcaption></figure>
     <p>For a closer look at an Org Chart and a Directory roster, you can also use the cropped sample charts in the groups on and groups off section above.</p>
     <p>Your team is saved until you type <strong>Start over</strong>. You can keep editing and type <strong>Finish</strong> again whenever you like.</p>
     <h2 id="start-over">Start over</h2>

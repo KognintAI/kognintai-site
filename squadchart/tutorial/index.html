@@ -25,14 +25,21 @@
     .ex{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9rem;background:#F3F4F6;border-left:3px solid #B45309;border-radius:4px;padding:10px 14px;margin:8px 0 16px;overflow-wrap:anywhere}
     figure{margin:16px 0 24px}figure img{display:block;max-width:100%;height:auto;border:1px solid #E5E7EB;border-radius:6px}
     figcaption{font-size:.875rem;color:#4B5563;margin-top:6px}
+    html{scroll-behavior:smooth}h2{scroll-margin-top:16px}
+    .toc{margin:24px 0 8px;padding:14px 18px;background:#F9FAFB;border:1px solid #E5E7EB;border-radius:8px;font-size:.95rem}
+    .toc p{margin:0 0 6px;font-weight:600}.toc ul{margin:0;padding-left:1.2em;columns:2;column-gap:24px}.toc li{margin:0;padding:2px 0;break-inside:avoid}
+    @media (max-width:520px){.toc ul{columns:1}}
+    .totop{position:fixed;right:16px;bottom:16px;background:#fff;border:1px solid #E5E7EB;border-radius:999px;padding:6px 14px;font-size:.875rem;text-decoration:none;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+    .totop:focus,.totop:hover{text-decoration:underline}
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap" id="top">
     <header><a href="/" class="mark" aria-label="SquadChart™"><img src="../assets/squadchart-R1b-w800-wordmark.svg" width="481" height="84" alt=""><sup aria-hidden="true">™</sup></a></header>
     <h1>SquadChart™ tutorial</h1>
     <p class="tag">Your bot team at a glance.</p>
-    <h2>Getting started</h2>
+    <nav class="toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#getting-started">Getting started</a></li><li><a href="#first-charts">Your first charts</a></li><li><a href="#change-things">Change things anytime</a></li><li><a href="#groups-on-off">Groups on and groups off</a></li><li><a href="#things-you-can-type">Things you can type anytime</a></li><li><a href="#finish">Finish</a></li><li><a href="#start-over">Start over</a></li><li><a href="#good-to-know">Good to know</a></li></ul></nav>
+    <h2 id="getting-started">Getting started</h2>
     <p>SquadChart welcomes you and gives you a short message to send to your orchestrator. After you send it, drop <strong>team-intake.md</strong> into the chat.</p>
     <p>If a saved team is already there when you drop a new file, you’ll be asked before it is replaced. If you cancel, the saved team stays as it is.</p>
     <p>SquadChart maps up to 10 bots. If the file has more than that, it stops and asks you to type <strong>Start over</strong> to try again. Any team you already saved is left as it is.</p>
@@ -46,7 +53,7 @@
     <p>Then it always asks <strong>Use groups? If No, lines follow Reports to.</strong> Choose <strong>Yes</strong> or <strong>No</strong>. You can’t switch this mid-way. To answer the other way later, type <strong>Start over</strong>. It’s designed to ask first: <strong>Delete your saved team?</strong> Choose <strong>Yes, delete it</strong>, then share the team again and answer Use groups? the other way.</p>
     <figure><a href="../assets/tutorial/use-groups.png"><img src="../assets/tutorial/use-groups.png" width="700" height="181" loading="lazy" alt="The Use groups? question."></a><figcaption>The Use groups? question.</figcaption></figure>
     <p>If no bot coordinates the team, it may also ask you to name an orchestrator, or it will route groups to you. You can change this later.</p>
-    <h2>Your first charts</h2>
+    <h2 id="first-charts">Your first charts</h2>
     <p>Then your first Org Chart and Directory appear, along with <strong>team-directory.md</strong>. Charts can take several minutes to render, so give them a little time. A short summary looks like this: <strong>10 bots · 37 handoff rows · 0 outside notes</strong>.</p>
     <p>The first charts may also list missing titles, for example <strong>Title (Not set): Bot Smith</strong>, and flag items that need your attention, for example:</p>
     <ul>
@@ -55,7 +62,7 @@
     <li>Wrench: no group; reports to Daniel, but Ungrouped reports to Atlas</li>
     </ul>
     <figure><a href="../assets/tutorial/first-render.png"><img src="../assets/tutorial/first-render.png" width="712" height="722" loading="lazy" alt="The first Org Chart and Directory, with the summary line, Title (Not set): Bot Smith, and the items flagged for a look."></a><figcaption>The first Org Chart and Directory, with the summary line, Title (Not set): Bot Smith, and the items flagged for a look.</figcaption></figure>
-    <h2>Change things anytime</h2>
+    <h2 id="change-things">Change things anytime</h2>
     <p>After those first charts, you can type a change whenever you like — one change, or several in the same message.</p>
     <p>You might type:</p>
     <div class="ex">move quill to admin, bot smith and wrench report to atlas</div>
@@ -66,7 +73,7 @@
     <p>Type <strong>new Org Chart</strong>, <strong>new Directory</strong>, <strong>Finish</strong> or <strong>Start over</strong> by itself. For everything else, you can list several changes in the same message.</p>
     <p>Here’s another example, with three changes together:</p>
     <div class="ex">Put Wrench in Research, rename Seedling to Sprout and set Personal color to teal.</div>
-    <h2>Groups on and groups off</h2>
+    <h2 id="groups-on-off">Groups on and groups off</h2>
     <p><strong>What a group is.</strong> A group is a set of bots that work in the same area, like Creative, Research, or Personal. With groups on, each group gets its own section and color on the Org Chart, and each group reports to someone, such as your orchestrator or you. Bots that aren't in a group sit together under <strong>Ungrouped</strong>. The orchestrator sits in the <strong>Admin</strong> row. With groups on, a bot sits there when you Put or Move it into Admin; a bot that only reports to you stays in its group. With groups off, a bot that reports to you is treated as an admin peer.</p>
     <p>You use groups to sort your team at a glance. Type <strong>Put Easel in Creative</strong> to add a bot to a group, and a new name makes a new group. You can also set a group's color, change the order of the groups, and say who each group reports to. With groups off, there are no sections, and the lines on the chart simply follow who each bot reports to.</p>
     <p><strong>Use groups?</strong> is asked once, up front. Here’s how the same sample team looks each way. These are the high-resolution sample charts (the in-image footer is cropped off so it doesn’t clash with the page footer). The first-render screenshot above and the Finish screenshot later are also groups on.</p>
@@ -76,7 +83,7 @@
     <p>The Directory changes the same way. With groups on, bots are listed under their groups. With groups off, they're laid out by who they report to. Turning groups on or off changes only how the team is laid out. It doesn't change your handoffs or how many there are. The charts here are examples from different snapshots, so the two views, including the summary counts, won't match each other exactly.</p>
     <figure><a href="../assets/tutorial/groups-on-directory-roster.png"><img src="../assets/tutorial/groups-on-directory-roster.png" width="1824" height="2336" loading="lazy" alt="The sample Directory roster with groups on."></a><figcaption>The sample Directory roster with groups on.</figcaption></figure>
     <figure><a href="../assets/tutorial/groups-off-directory-roster.png"><img src="../assets/tutorial/groups-off-directory-roster.png" width="2162" height="1583" loading="lazy" alt="The sample Directory roster with groups off."></a><figcaption>The sample Directory roster with groups off.</figcaption></figure>
-    <h2>Things you can type anytime</h2>
+    <h2 id="things-you-can-type">Things you can type anytime</h2>
     <p>These are the changes you can type after your first charts. One example each, using the sample team on the charts above: Daniel, Atlas, Quill, Easel, Spark, Ranger, Metric, Compass, Seedling, Bot Smith, and Wrench.</p>
     <h3>Groups</h3>
     <p><strong>Put bot in group</strong> — A new name makes a new group.</p>
@@ -117,18 +124,18 @@
     <div class="ex">In Admin, move Quill to the left of Atlas</div>
     <p>With groups off, a move left or right doesn’t name a group. Bot Smith and Wrench are the peers who report to Daniel.</p>
     <div class="ex">Move Wrench to the left of Bot Smith</div>
-    <h2>Finish</h2>
+    <h2 id="finish">Finish</h2>
     <p>When you’re ready, type <strong>Finish</strong> by itself.</p>
     <p>You get your Org Chart, the Directory (the image and <strong>team-directory.md</strong>), and <strong>team-changes.md</strong>. The summary in this Finish shot is <strong>10 bots · 37 handoff rows · 0 outside notes</strong>. The org chart shows the updates from the change above: Quill now sits in the admin row with Atlas.</p>
     <p>It also says: <strong>Saved until you type Start over. To change more, type an entry as before, like Put bot in group, then Finish to re-render.</strong></p>
     <figure><a href="../assets/tutorial/finish.png"><img src="../assets/tutorial/finish.png" width="712" height="585" loading="lazy" alt="What Finish delivers: the updated Org Chart and Directory, team-directory.md, team-changes.md, the summary line, and the Saved until Start over note."></a><figcaption>What Finish delivers: the updated Org Chart and Directory, team-directory.md, team-changes.md, the summary line, and the Saved until Start over note.</figcaption></figure>
     <p>For a closer look at an Org Chart and a Directory roster, you can also use the cropped sample charts in the groups on and groups off section above.</p>
     <p>Your team is saved until you type <strong>Start over</strong>. You can keep editing and type <strong>Finish</strong> again whenever you like.</p>
-    <h2>Start over</h2>
+    <h2 id="start-over">Start over</h2>
     <p>Type <strong>Start over</strong> by itself. It asks: <strong>Delete your saved team?</strong> Choose <strong>Yes, delete it</strong>, or <strong>Cancel</strong>.</p>
     <figure><a href="../assets/tutorial/start-over-confirm.png"><img src="../assets/tutorial/start-over-confirm.png" width="697" height="181" loading="lazy" alt="The Start over confirmation."></a><figcaption>The Start over confirmation.</figcaption></figure>
     <p><strong>Yes, delete it</strong> clears the saved team, and you’re back at the welcome. <strong>Cancel</strong> leaves the team as it is.</p>
-    <h2>Good to know</h2>
+    <h2 id="good-to-know">Good to know</h2>
     <ul>
     <li>Type <strong>new Org Chart</strong>, <strong>new Directory</strong>, <strong>Finish</strong> or <strong>Start over</strong> by itself. For everything else, you can list several changes in the same message.</li>
     <li>You can’t switch groups on or off mid-way. Type <strong>Start over</strong>. It’s designed to ask first; choose <strong>Yes, delete it</strong>, then share the team again and answer <strong>Use groups?</strong> the other way.</li>
@@ -143,5 +150,6 @@
     <nav><a href="../">Back to SquadChart™</a> · <a href="../tutorial/">Tutorial</a> · <a href="../rules/">Rules and limits</a></nav>
     <footer><p>SquadChart™ · © 2026 KognintAI LLC · <span class="nw">Runs on Grok Bot,</span> not affiliated with or endorsed by xAI · <a href="../terms/">Usage Agreement</a> · <a href="mailto:info@kognintai.com">info@kognintai.com</a></p></footer>
   </div>
+  <a href="#top" class="totop">Back to top ↑</a>
 </body>
 </html>

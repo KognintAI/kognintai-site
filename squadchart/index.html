@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SquadChart™ | Your bot team at a glance</title>
+  <meta name="description" content="SquadChart™: your Grok Bot team at a glance. Share your team file, review and edit the charts in plain words, and type Finish to get your files. Up to 10 bots.">
+  <link rel="canonical" href="https://kognintai.com/squadchart/">
+  <meta property="og:title" content="SquadChart™ | Your bot team at a glance">
+  <meta property="og:description" content="Your Grok Bot team at a glance. Up to 10 bots.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kognintai.com/squadchart/">
+  <meta property="og:image" content="https://kognintai.com/squadchart/assets/wiki-r19k4-social-r6-1080x1350.png">
+  <link rel="icon" href="assets/squadchart-R1b-w800-favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/squadchart-R1b-w800-avatar-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/squadchart-R1b-w800-avatar-16.png">
+  <link rel="apple-touch-icon" href="assets/squadchart-R1b-w800-avatar-180.png">
+  <style>
+    :root{--ink:#1F2937;--accent:#B45309;--muted:#4B5563;--line:#E5E7EB}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#fff;color:var(--ink);line-height:1.6;text-align:center}
+    .wrap{max-width:1200px;margin:0 auto;padding:32px 24px 48px}
+    .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+    .wiki{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;display:block}
+    .more{margin:12px 0 32px;font-size:.95rem}
+    .layout{display:grid;grid-template-columns:640px minmax(300px,1fr);gap:48px;align-items:stretch}
+    .right{display:flex;flex-direction:column}
+    .right .get{flex:1 0 auto}
+    .support{display:grid;grid-template-columns:1fr;gap:16px;margin:0 0 32px;text-align:left}
+    @media (max-width:640px){.support{grid-template-columns:1fr}}
+    .card{display:block;border:1px solid var(--line);border-radius:8px;padding:16px 18px;text-decoration:none;color:var(--ink)}
+    .card:hover{border-color:var(--accent)}
+    .card strong{display:block;color:var(--accent);margin-bottom:4px}
+    .card span{font-size:.95rem;color:var(--muted)}
+    @media (max-width:1180px){.layout{display:flex;flex-direction:column;gap:28px}.right{display:contents}.left{order:1}.intro{order:2;margin:0}.right .get{order:3;margin-top:0}.support{order:4;margin:0}}
+    .intro{text-align:left;margin:0 0 24px}
+    .intro h2{font-size:1.75rem;font-weight:800;line-height:1.2;margin:0 0 10px;color:var(--accent)}
+    .intro p{margin:0;font-size:1.05rem;line-height:1.7}
+    .get{text-align:left;display:flex;flex-direction:column;justify-content:center;background:#FFF7ED;border:1px solid #F5D0A9;border-top:4px solid var(--accent);border-radius:8px;padding:32px 28px}
+    .use{margin:0 0 20px;color:var(--ink);font-size:1.1rem}
+    label{display:flex;gap:10px;align-items:flex-start;margin:0 0 16px;cursor:pointer}
+    input[type=checkbox]{width:20px;height:20px;margin-top:3px;accent-color:var(--accent);flex:none}
+    a{color:var(--accent)}
+    .btn{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;padding:18px 26px;border-radius:8px;font-weight:700;font-size:1.25rem}
+    .btn[aria-disabled=true]{background:#6B7280;pointer-events:none;cursor:not-allowed}
+    footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:.8125rem;color:var(--muted)}
+    footer p{margin:3px 0}
+    .nw{white-space:nowrap}
+      .intro h3{font-size:1rem;margin:16px 0 6px}.intro ul{margin:0;padding-left:1.2em;font-size:.95rem}.intro li{margin:2px 0}.intro p.caveat{margin-top:14px;font-size:.875rem;color:var(--muted);font-style:italic}
+      @media (max-width:640px){.intro h2{font-size:1.3rem}}
+      .support .card{padding:24px 22px;min-height:112px}
+      .wrap>.caveat{margin:32px 0 0;font-size:.85rem;color:var(--muted);font-style:italic}
+    .use{line-height:1.7}
+      .get label{font-size:1.02rem;margin-bottom:24px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="vh">SquadChart™: your bot team at a glance</h1>
+
+    <div class="layout">
+      <div class="left">
+        <img class="wiki" src="assets/wiki-web-r6-1275x1650.png" srcset="assets/wiki-web-r6-1275x1650.png 1x, assets/wiki-web-r6-letter.png 2x" width="1275" height="1650" alt="SquadChart graphic, your bot team at a glance. Four steps: share your team by dropping your team file in the chat; review the charts to see who does what and how work moves; edit in plain words, for example 'Put Sam in Sales' or 'Rename Sam to Alex'; and type Finish to get your charts and files, then edit and run again anytime. Highlights: free to use within your Grok Bot plan limit; built for small teams, up to 10 bots; no outside chart services, by SquadChart only; no passwords, doesn't ask for keys or tokens. Note: runs count toward your Grok Bot plan usage.">
+      </div>
+      <div class="right">
+        <div class="intro">
+          <h2>Your bot team at a glance, with rules you can see.</h2>
+          <p>SquadChart™ maps a Grok Bot team of up to 10 bots into a clear Org Chart and Directory. It follows set rules and shows you what it does and doesn't do.</p>
+        </div>
+        <nav class="support" aria-label="Support">
+          <a class="card" href="tutorial/"><strong>Tutorial</strong><span>How to use SquadChart™, with every command and examples.</span></a>
+          <a class="card" href="rules/"><strong>Rules and limits</strong><span>How SquadChart™ is designed to handle your team and files.</span></a>
+        </nav>
+        <div class="get" id="get">
+          <p class="use">Free for personal use and for a company's own internal teams. Not for client work or services to others, paid or free.</p>
+          <label><input type="checkbox" id="agree"> <span>I have read and agree to the <a href="terms/">SquadChart Usage Agreement</a>.</span></label>
+          <!-- DOWNLOAD LINK: Antonio adds the real URL in data-href below -->
+          <a class="btn" id="dl" href="#get" data-href="" aria-disabled="true" role="button">Get SquadChart™</a>
+        </div>
+      </div>
+    </div>
+
+
+    <footer><p>SquadChart™ · © 2026 KognintAI LLC · <span class="nw">Runs on Grok Bot,</span> not affiliated with or endorsed by xAI · <a href="terms/">Usage Agreement</a> · <a href="mailto:info@kognintai.com">info@kognintai.com</a></p></footer>
+  </div>
+  <script>
+    (function(){
+      var box=document.getElementById('agree'), btn=document.getElementById('dl');
+      box.checked=false;
+      box.addEventListener('change',function(){
+        var url=btn.getAttribute('data-href');
+        if(box.checked && url){btn.href=url;btn.setAttribute('aria-disabled','false');}
+        else{btn.href='#get';btn.setAttribute('aria-disabled','true');}
+      });
+    })();
+  </script>
+</body>
+</html>

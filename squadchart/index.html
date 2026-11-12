@@ -54,6 +54,7 @@
     .use{line-height:1.7}
       .get label{font-size:1.02rem;margin-bottom:24px}
   </style>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="66add34a-217b-442e-922a-92049e173783"></script>
 </head>
 <body>
   <div class="wrap">
@@ -91,6 +92,9 @@
         var url=btn.getAttribute('data-href');
         if(box.checked && url){btn.href=url;btn.setAttribute('aria-disabled','false');}
         else{btn.href='#get';btn.setAttribute('aria-disabled','true');}
+      });
+      btn.addEventListener('click',function(){
+        if(btn.getAttribute('aria-disabled')==='false' && window.umami){window.umami.track('get-squadchart');}
       });
     })();
   </script>

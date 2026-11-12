@@ -4,3 +4,4 @@
 |---|---|---|---|
 | 2026-11-12 | First commit: light placeholder index.html with locked KognintAI wordmark + k3-kb3 favicon (PNGs from Canvas, unedited), CNAME (kognintai.com), this changelog | Antonio | pending |
 | 2026-11-12 03:15 | Home page: replaced "Coming soon." with "Practical AI tools and common-sense guidance for businesses and individuals."; meta description updated to match; line max-width 40em | Antonio (t52s2, 3:14 AM ET) | pending |
+| 2026-11-12 03:19 | Home page line: "businesses and individuals" changed to "teams and individuals" (text + meta description) | Antonio (t53s2, 3:19 AM ET) | pending |

@@ -33,7 +33,7 @@
     .card:hover{border-color:var(--accent)}
     .card strong{display:block;color:var(--accent);margin-bottom:4px}
     .card span{font-size:.95rem;color:var(--muted)}
-    @media (max-width:1180px){.layout{display:flex;flex-direction:column;gap:16px}.right{display:contents}.left{display:none}.right .intro{order:1;margin:0}.right .get{order:2;margin-top:0;padding:20px 22px}.right .get .use{margin:0 0 12px;font-size:1rem;line-height:1.55}.right .get label{margin-bottom:14px}.right .get .btn{padding:14px 22px;font-size:1.15rem}.support{order:3;margin:0}}
+    @media (max-width:1180px){.layout{display:flex;flex-direction:column;gap:16px}.right{display:contents}.left{display:none}.right .intro{order:1;margin:0}.right .intro h2{margin:0 0 6px}.right .intro p{font-size:.95rem;line-height:1.5}.right .get{order:2;margin-top:0;padding:14px 18px}.right .get .use{margin:0 0 8px;font-size:.95rem;line-height:1.45}.right .get label{margin-bottom:10px;font-size:.95rem;line-height:1.45}.right .get input[type=checkbox]{margin-top:1px}.right .get .btn{padding:11px 18px;font-size:1.1rem}.support{order:3;margin:0}}
     .intro{text-align:left;margin:0 0 24px}
     .intro h2{font-size:1.75rem;font-weight:800;line-height:1.2;margin:0 0 10px;color:var(--accent)}
     .intro p{margin:0;font-size:1.05rem;line-height:1.7}
@@ -54,6 +54,7 @@
     .use{line-height:1.7}
       .get label{font-size:1.02rem;margin-bottom:24px}
     @media (min-width:1181px){.left{display:flex;flex-direction:column}.left picture{flex:1 1 auto;min-height:0;display:flex}.left .wiki{height:100%;object-fit:contain;object-position:center}.right .get{flex:1 0 auto;margin:0 0 14.8px;padding:24px 28px}.right .support{gap:14.8px;margin-top:0;margin-bottom:42.4px}}
+    .mlogo{display:none}.hl{display:none}.hl img{width:100%;height:auto;display:block}@media (max-width:1180px){.hl{display:block;order:2}.right .get{order:3}.support{order:4}.right .get .use{order:3;margin:12px 0 0}.right .get label{order:1}.right .get .btn{order:2}.wrap{padding-top:18px}.layout{gap:12px}.right .intro h2{font-size:1.2rem;margin:0 0 4px}.right .intro p{font-size:.9rem;line-height:1.45}.right .get .use,.right .get label span,.right .support .card span{font-size:.9rem;line-height:1.45}.right .get .btn,.right .support .card strong{font-size:1rem}.right .support .card span{display:block}.right .support .card{padding:14px 18px;min-height:0}.right .support .card strong{margin-bottom:2px}.mlogo{display:block;order:0;height:24px;width:auto;align-self:flex-start;margin:0 0 2px}}
   </style>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="66add34a-217b-442e-922a-92049e173783"></script>
 </head>
@@ -66,10 +67,12 @@
         <picture><source type="image/webp" srcset="assets/wiki-web-r6d-640.webp 640w, assets/wiki-web-r6d-1131.webp 1131w, assets/wiki-web-r6d-2262.webp 2262w" sizes="(max-width:1180px) calc(100vw - 48px), 640px"><img class="wiki" src="assets/wiki-web-r6d-1131x1506.png" srcset="assets/wiki-web-r6d-1131x1506.png 1x, assets/wiki-web-r6d-2x.png 2x" width="1131" height="1506" fetchpriority="high" alt="SquadChart graphic, your bot team at a glance. Four steps: share your team by dropping your team file in the chat; review the charts to see who does what and how work moves; edit in plain words, for example 'Put Sam in Sales' or 'Rename Sam to Alex'; and type Finish to get your charts and files, then edit and run again anytime. Highlights: free to use within your Grok Bot plan limit; built for small teams, up to 10 bots; no outside chart services, by SquadChart only; no passwords, doesn't ask for keys or tokens. Note: runs count toward your Grok Bot plan usage."></picture>
       </div>
       <div class="right">
+        <img class="mlogo" src="assets/squadchart-R1b-w800-wordmark.svg" width="481" height="84" alt="SquadChart">
         <div class="intro">
           <h2>Your bot team at a glance.</h2>
           <p>SquadChart™ maps a Grok Bot team of up to 10 bots into a clear Org Chart and Directory. See how your team is really set up, plan changes in plain words, and keep a record of each update, all inside guardrails that show what it does and doesn't do.</p>
         </div>
+        <picture class="hl"><source media="(max-width:1180px)" type="image/webp" srcset="assets/wiki-web-r6d-hl-640.webp 640w, assets/wiki-web-r6d-hl-1131.webp 1131w, assets/wiki-web-r6d-hl-2262.webp 2262w" sizes="calc(100vw - 48px)"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="2262" height="777" alt="Highlights: free to use within your Grok Bot plan limit; built for small teams, up to 10 bots; no outside chart services, by SquadChart only; no passwords, doesn't ask for keys or tokens. Note: runs count toward your Grok Bot plan usage."></picture>
         <div class="get" id="get">
           <p class="use">Free for personal use and for a company's own internal teams. Not for client work or services to others, paid or free.</p>
           <label><input type="checkbox" id="agree"> <span>I have read and agree to the <a href="terms/">SquadChart Usage Agreement</a>.</span></label>
